@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<div>
+    <table>
+        <tr th:each="wordKey, iterator:${anyKey}">
+            <td th:text="${iterator.index + 1}"></td>
+            <td th:text="${wordKey}"></td>
+        </tr>
+    </table>
+</div>
+</body>
+</html>
