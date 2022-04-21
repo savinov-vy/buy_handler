@@ -21,5 +21,4 @@ public class HandlerController {
         model.addAttribute("anyKey", list);
         return "index";
     }
-
 }
